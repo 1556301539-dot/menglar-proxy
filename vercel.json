@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "name": "chaowei-proxy",
   "builds": [
     {
       "src": "server.js",
@@ -7,14 +8,6 @@
     }
   ],
   "routes": [
-    {
-      "src": "/api/menglar/calculate",
-      "dest": "server.js"
-    },
-    {
-      "src": "/health",
-      "dest": "server.js"
-    },
     {
       "src": "/(.*)",
       "dest": "server.js"
